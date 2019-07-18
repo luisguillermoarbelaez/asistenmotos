@@ -12,6 +12,9 @@ import { ComponentsModule } from './components/components.module';
 
 import { HttpClientModule } from '@angular/common/http';
 import { PipesModule } from './pipes/pipes.module';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 
 
@@ -24,7 +27,9 @@ import { PipesModule } from './pipes/pipes.module';
     AppRoutingModule,
     ComponentsModule,
     PipesModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule
   ],
   providers: [
     StatusBar,

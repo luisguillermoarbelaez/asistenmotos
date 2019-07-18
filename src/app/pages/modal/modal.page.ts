@@ -19,8 +19,8 @@ export class ModalPage implements OnInit {
     const modal = await this.modalCtrl.create({
       component: ModalInfoPage,
       componentProps: {
-        nombre: 'Fernando',
-        pais: 'Costa Rica'
+        nombre: 'Prueba',
+        pais: 'Colombia'
       }
     });
 

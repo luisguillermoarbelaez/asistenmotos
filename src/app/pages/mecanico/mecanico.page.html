@@ -1,0 +1,54 @@
+<app-header titulo="Mecanico"></app-header>
+
+<ion-content padding>
+    <ion-list lines="full">
+        <ion-item>
+            <ion-label position= "floating">
+                nombre
+            </ion-label>
+            <ion-input [(ngModel)]= "mecanico.nombre" placeholder="Digite tu nombre">
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                apellido
+            </ion-label>
+            <ion-input [(ngModel)]= "mecanico.apellido" placeholder="Digite el apellido">
+  
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                edad
+            </ion-label>
+            <ion-input [(ngModel)]="mecanico.edad">
+  
+              </ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>
+                  sexo
+              </ion-label>
+              <ion-input [(ngModel)]= "mecanico.sexo" placeholder="Digite su sexo">
+  
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                direccion
+            </ion-label>
+            <ion-input [(ngModel)]= "mecanico.direccion" placeholder="Digite su direccion">
+
+          </ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <ion-button size="small" expand="full" (click)= "guardar()">
+        <ion-icon name="laptop">
+  
+        </ion-icon>
+        Guardar
+    </ion-button>
+  
+  </ion-content>
+  

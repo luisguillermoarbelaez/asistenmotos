@@ -1,4 +1,56 @@
-[{
+[
+    
+    {
+        "icon": "american-football",
+        "name": "Dashboard Cuenta",
+        "redirectTo": "/dashboardcuenta"
+    },
+    {
+        "icon": "american-football",
+        "name": "Mis Motos",
+        "redirectTo": "/mismotos"
+    },
+    {
+        "icon": "american-football",
+        "name": "Nueva Moto",
+        "redirectTo": "/nuevamoto"
+    },
+    {
+        "icon": "american-football",
+        "name": "Mecanico",
+        "redirectTo": "/mecanico"
+    },
+    {
+        "icon": "american-football",
+        "name": "Mecanicos Lista",
+        "redirectTo": "/mecanicoslista"
+    },
+    {
+        "icon": "american-football",
+        "name": "Prestadores Lista",
+        "redirectTo": "/prestadoreslista"
+    },
+    {
+        "icon": "american-football",
+        "name": "Prestador Edit",
+        "redirectTo": "/prestadoredit"
+    },
+    {
+        "icon": "american-football",
+        "name": "Usuario Edit",
+        "redirectTo": "/usuarioedit"
+    },
+    {
+        "icon": "american-football",
+        "name": "Taller Edit",
+        "redirectTo": "/talleredit"
+    },
+    {
+        "icon": "american-football",
+        "name": "Usuarios Lista",
+        "redirectTo": "/usuarioslista"
+    },
+    {
         "icon": "american-football",
         "name": "Action Sheet",
         "redirectTo": "/action-sheet"

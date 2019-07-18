@@ -40,7 +40,7 @@ export class MapaPage implements OnInit, AfterViewInit {
       })
       .setLngLat([-75.6946, 4.81321])
       .addTo(map);
-       
+   
 
     // Insert the layer beneath any symbol layer.
     var layers = map.getStyle().layers;

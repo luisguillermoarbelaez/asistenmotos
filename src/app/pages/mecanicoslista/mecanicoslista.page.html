@@ -1,0 +1,39 @@
+<app-header titulo="Mecanicos Lista"></app-header>
+
+<ion-content>
+
+
+    <ion-list>
+
+        <ion-item-sliding *ngFor="let mecanico of mecanicos">
+          
+          <ion-item>
+            <ion-label>
+              
+              <h3>{{ mecanico.nombre }}</h3>
+              <p>
+                {{ mecanico.descripcion }}
+              </p>
+            </ion-label>
+      
+            <ion-label slot="end" text-right>
+              {{ mecanico.telefono }}
+            </ion-label>
+
+            
+
+            <ion-label>
+              {{mecanico.direccion}}
+
+            </ion-label>
+      
+          </ion-item>
+    
+         
+          
+    
+        </ion-item-sliding>
+        
+      </ion-list>
+  
+  </ion-content>

@@ -27,6 +27,17 @@ const routes: Routes = [
   { path: 'slides', loadChildren: './pages/slides/slides.module#SlidesPageModule' },
   { path: 'tabs', loadChildren: './pages/tabs/tabs.module#TabsPageModule' },
   { path: 'mapa', loadChildren: './pages/mapa/mapa.module#MapaPageModule' },
+  { path: 'dashboardcuenta', loadChildren: './pages/dashboardcuenta/dashboardcuenta.module#DashboardcuentaPageModule' },
+  { path: 'mismotos', loadChildren: './pages/mismotos/mismotos.module#MismotosPageModule' },
+  { path: 'nuevamoto', loadChildren: './pages/nuevamoto/nuevamoto.module#NuevamotoPageModule' },
+  { path: 'mecanico', loadChildren: './pages/mecanico/mecanico.module#MecanicoPageModule' },
+  { path: 'prestadoreslista', loadChildren: './pages/prestadoreslista/prestadoreslista.module#PrestadoreslistaPageModule' },
+  { path: 'prestadoredit', loadChildren: './pages/prestadoredit/prestadoredit.module#PrestadoreditPageModule' },
+  { path: 'usuarioedit', loadChildren: './pages/usuarioedit/usuarioedit.module#UsuarioeditPageModule' },
+  { path: 'usuarioslista', loadChildren: './pages/usuarioslista/usuarioslista.module#UsuarioslistaPageModule' },
+  { path: 'mecanicoslista', loadChildren: './pages/mecanicoslista/mecanicoslista.module#MecanicoslistaPageModule' },
+  { path: 'talleredit', loadChildren: './pages/talleredit/talleredit.module#TallereditPageModule' },
+
 ];
 
 @NgModule({

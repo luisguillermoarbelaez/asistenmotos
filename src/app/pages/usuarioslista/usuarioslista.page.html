@@ -1,0 +1,39 @@
+<app-header titulo="Usuarios Lista"></app-header>
+
+<ion-content>
+
+
+    <ion-list>
+
+        <ion-item-sliding *ngFor="let usuario of usuarios">
+          
+          <ion-item>
+            <ion-label>
+              
+              <h3>{{ usuario.nombre }}</h3>
+              <p>
+                {{ usuario.apellido }}
+              </p>
+            </ion-label>
+      
+            <ion-label slot="end" text-right>
+              {{ usuario.sexo }}
+            </ion-label>
+
+            
+
+            <ion-label>
+              {{usuario.direccion}}
+
+            </ion-label>
+      
+          </ion-item>
+    
+         
+          
+    
+        </ion-item-sliding>
+        
+      </ion-list>
+  
+  </ion-content>

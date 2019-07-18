@@ -1,0 +1,54 @@
+<app-header titulo="Taller Edit"></app-header>
+
+<ion-content padding>
+    <ion-list lines="full">
+        <ion-item>
+            <ion-label position= "floating">
+                nombre
+            </ion-label>
+            <ion-input [(ngModel)]= "taller.nombre" placeholder="descripcion nombre">
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                descripcion
+            </ion-label>
+            <ion-input [(ngModel)]= "taller.descripcion" placeholder="Digite su descripcion">
+  
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                horario
+            </ion-label>
+            <ion-input [(ngModel)]="taller.horario">
+  
+              </ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label>
+                  telefono
+              </ion-label>
+              <ion-input [(ngModel)]= "taller.telefono" placeholder="Digite su telefono">
+  
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                direccion
+            </ion-label>
+            <ion-input [(ngModel)]= "taller.direccion" placeholder="Digite su direccion">
+
+          </ion-input>
+      </ion-item>
+    </ion-list>
+  
+    <ion-button size="small" expand="full" (click)= "guardar()">
+        <ion-icon name="laptop">
+  
+        </ion-icon>
+        Guardar
+    </ion-button>
+  
+  </ion-content>
+  

@@ -1,0 +1,39 @@
+<app-header titulo="Prestadores Lista"></app-header>
+
+<ion-content>
+
+
+    <ion-list>
+
+        <ion-item-sliding *ngFor="let prestador of prestadores">
+          
+          <ion-item>
+            <ion-label>
+              
+              <h3>{{ prestador.nombre }}</h3>
+              <p>
+                {{ prestador.descripcion }}
+              </p>
+            </ion-label>
+      
+            <ion-label slot="end" text-right>
+              {{ prestador.telefono }}
+            </ion-label>
+
+            
+
+            <ion-label>
+              {{prestador.direccion}}
+
+            </ion-label>
+      
+          </ion-item>
+    
+         
+          
+    
+        </ion-item-sliding>
+        
+      </ion-list>
+  
+  </ion-content>

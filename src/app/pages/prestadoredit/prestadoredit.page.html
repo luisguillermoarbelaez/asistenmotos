@@ -1,0 +1,60 @@
+<app-header titulo="Prestador Edit"></app-header>
+
+<ion-content padding>
+  <ion-list lines="full">
+      <ion-item>
+          <ion-label position= "floating">
+              descripcion
+          </ion-label>
+          <ion-input [(ngModel)]= "prestador.descripcion" placeholder="descripcion de su servicio">
+
+          </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>
+              horario
+          </ion-label>
+          <ion-input [(ngModel)]= "prestador.horario" placeholder="Digite el horario de servicio">
+
+          </ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>
+              nombre
+          </ion-label>
+          <ion-input [(ngModel)]="prestador.nombre" >
+
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>
+                direccion
+            </ion-label>
+            <ion-input [(ngModel)]= "prestador.direccion" placeholder="Digite su direccion">
+
+          </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label >
+            Tipo de prestador
+        </ion-label>
+        <ion-select [(ngModel)]= "prestador.tipo" placeholder="Seleccione Uno ">
+
+        <ion-select-option value="T" >Taller</ion-select-option>
+        <ion-select-option value="M" >Mecánico </ion-select-option>
+        <ion-select-option value="A" >Almacen </ion-select-option>
+        </ion-select>
+  </ion-item>
+
+
+  </ion-list>
+
+  <ion-button size="small" expand="full" (click)= "guardar()">
+      <ion-icon name="laptop">
+
+      </ion-icon>
+      Guardar
+  </ion-button>
+
+</ion-content>
